@@ -1,0 +1,4 @@
+# Use environment-specific files instead:
+#   pip install -r requirements/local.txt       (development)
+#   pip install -r requirements/production.txt  (production)
+-r requirements/base.txt

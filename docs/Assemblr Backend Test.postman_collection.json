@@ -1,0 +1,1802 @@
+{
+  "info": {
+    "_postman_id": "b92b0743-7eb7-48ab-a108-82df88e7d682",
+    "name": "Assemblr Backend Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5537733"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"budi.doremi@email.com\",\n  \"name\": \"Budi Doremi\",\n  \"password\": \"!Password123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/auth/register/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "register",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Register",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"email\": \"budi.doremi@email.com\",\n  \"name\": \"Budi Doremi\",\n  \"password\": \"!Password123\"\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/v1/auth/register/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "auth",
+                    "register",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 10:56:16 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "574"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Account created successfully.\",\n    \"data\": {\n        \"user\": {\n            \"id\": \"bd9334d2-f859-4e79-a0d6-2110b4ec6b9e\",\n            \"email\": \"budi.doremi@email.com\",\n            \"name\": \"Budi Doremi\",\n            \"created_at\": \"2026-03-06T17:56:16.395122+07:00\",\n            \"updated_at\": \"2026-03-06T17:56:16.395132+07:00\"\n        },\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyODgwOTc2LCJpYXQiOjE3NzI3OTQ1NzYsImp0aSI6IjY2MWJkM2FkYzRmZDRlZDg5NjJkNDdmMWMzZjE5YTRiIiwidXNlcl9pZCI6ImJkOTMzNGQyLWY4NTktNGU3OS1hMGQ2LTIxMTBiNGVjNmI5ZSJ9.i8vxZeLwPduBLDjAYHKuQag48cKLa-wIlYkLHcDcpXU\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"budi@email.com\",\n  \"password\": \"!Password123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/auth/login/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "login",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Login",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"email\": \"budi@email.com\",\n  \"password\": \"!Password123\"\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/v1/auth/login/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "auth",
+                    "login",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 07:44:35 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "555"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Login successful.\",\n    \"data\": {\n        \"user\": {\n            \"id\": \"4c8ea298-3925-4ba5-a323-bd7609606317\",\n            \"email\": \"budi@email.com\",\n            \"name\": \"Budi Doremi\",\n            \"created_at\": \"2026-03-06T14:44:27.339993+07:00\",\n            \"updated_at\": \"2026-03-06T14:44:27.340006+07:00\"\n        },\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyODY5NDc1LCJpYXQiOjE3NzI3ODMwNzUsImp0aSI6IjZiM2NlZjAzMTZhZjRlZmI5ZDJiODliZjRjOTdjZGNkIiwidXNlcl9pZCI6IjRjOGVhMjk4LTM5MjUtNGJhNS1hMzIzLWJkNzYwOTYwNjMxNyJ9.TbpXJ6i4pJuzqklmO8z9g_YKA5efg8jpq_dv1ovwjO8\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get My Profile",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/auth/me/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "me",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get My Profile",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/v1/auth/me/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "auth",
+                    "me",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 10:56:36 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "243"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Success.\",\n    \"data\": {\n        \"id\": \"4c8ea298-3925-4ba5-a323-bd7609606317\",\n        \"email\": \"budi@email.com\",\n        \"name\": \"Budi Doremi\",\n        \"created_at\": \"2026-03-06T14:44:27.339993+07:00\",\n        \"updated_at\": \"2026-03-06T14:44:27.340006+07:00\"\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Get All Products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/products/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "products",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "sort",
+                  "value": "-created_at",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get All Products",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/v1/products/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "search",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "sort",
+                      "value": "-created_at",
+                      "disabled": true
+                    },
+                    {
+                      "key": "page",
+                      "value": "1",
+                      "disabled": true
+                    },
+                    {
+                      "key": "limit",
+                      "value": "10",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 10:31:53 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "805"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Success.\",\n    \"data\": [\n        {\n            \"id\": \"2478c76d-92ea-4d8f-bf8b-74d450092ecd\",\n            \"name\": \"Monitor\",\n            \"description\": \"24 inch monitor\",\n            \"price\": \"1000000\",\n            \"stock\": 5,\n            \"created_at\": \"2026-03-06T14:44:04.461924+07:00\",\n            \"updated_at\": \"2026-03-06T14:44:04.461930+07:00\"\n        },\n        {\n            \"id\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n            \"name\": \"Keyboard\",\n            \"description\": \"Mechanical keyboard\",\n            \"price\": \"350000\",\n            \"stock\": 5,\n            \"created_at\": \"2026-03-06T14:44:04.460781+07:00\",\n            \"updated_at\": \"2026-03-06T14:44:04.460788+07:00\"\n        },\n        {\n            \"id\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\",\n            \"name\": \"Mouse\",\n            \"description\": \"Productivity mouse\",\n            \"price\": \"150000\",\n            \"stock\": 25,\n            \"created_at\": \"2026-03-06T14:44:04.456591+07:00\",\n            \"updated_at\": \"2026-03-06T14:44:04.456613+07:00\"\n        }\n    ],\n    \"meta\": {\n        \"total\": 3,\n        \"page\": 1,\n        \"limit\": 10,\n        \"totalPages\": 1,\n        \"hasNext\": false,\n        \"hasPrev\": false\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Product Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/products/:id/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "products",
+                ":id",
+                ""
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "8ee5dd17-ca99-4492-ae69-853a59fb19e6"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Product Detail",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/v1/products/:id/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "8ee5dd17-ca99-4492-ae69-853a59fb19e6"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 07:45:12 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, DELETE, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "281"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Success.\",\n    \"data\": {\n        \"id\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n        \"name\": \"Keyboard\",\n        \"description\": \"Mechanical keyboard\",\n        \"price\": \"350000.00\",\n        \"stock\": 5,\n        \"created_at\": \"2026-03-06T14:44:04.460781+07:00\",\n        \"updated_at\": \"2026-03-06T14:44:04.460788+07:00\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create Product (Admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Laptop\",\n  \"description\": \"ASUS Laptop\",\n  \"price\": 2000000,\n  \"stock\": 40\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/products/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "products",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create Product (Admin)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Laptop\",\n  \"description\": \"ASUS Laptop\",\n  \"price\": 2000000,\n  \"stock\": 40\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/v1/products/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 10:57:34 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "278"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Product created.\",\n    \"data\": {\n        \"id\": \"0bdc1d2e-dd60-44ff-b94d-758d04db148c\",\n        \"name\": \"Laptop\",\n        \"description\": \"ASUS Laptop\",\n        \"price\": \"2000000\",\n        \"stock\": 40,\n        \"created_at\": \"2026-03-06T17:57:34.653973+07:00\",\n        \"updated_at\": \"2026-03-06T17:57:34.653986+07:00\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Product (Admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"T-Shirt\",\n  \"description\": \"Updated description\",\n  \"price\": 130000,\n  \"stock\": 80\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/products/:id/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "products",
+                ":id",
+                ""
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "0bdc1d2e-dd60-44ff-b94d-758d04db148c"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Update Product (Admin)",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Laptop\",\n  \"description\": \"Updated description\",\n  \"price\": 10000,\n  \"stock\": 80\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/v1/products/:id/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "0bdc1d2e-dd60-44ff-b94d-758d04db148c"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 10:58:00 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, DELETE, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "284"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Product updated.\",\n    \"data\": {\n        \"id\": \"0bdc1d2e-dd60-44ff-b94d-758d04db148c\",\n        \"name\": \"Laptop\",\n        \"description\": \"Updated description\",\n        \"price\": \"10000\",\n        \"stock\": 80,\n        \"created_at\": \"2026-03-06T17:57:34.653973+07:00\",\n        \"updated_at\": \"2026-03-06T17:57:34.653986+07:00\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Product (Admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/products/:id/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "products",
+                ":id",
+                ""
+              ],
+              "variable": [
+                {
+                  "key": "id"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Product (Admin)",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/v1/products/:id/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "0bdc1d2e-dd60-44ff-b94d-758d04db148c"
+                    }
+                  ]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 10:59:18 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, DELETE, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "68"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 204,\n    \"message\": \"Product deleted.\",\n    \"data\": null\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Get All Orders",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/orders/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "orders",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "pending",
+                  "disabled": true
+                },
+                {
+                  "key": "sort",
+                  "value": "-created_at",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get All Orders",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/v1/orders/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "orders",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "pending",
+                      "disabled": true
+                    },
+                    {
+                      "key": "sort",
+                      "value": "-created_at",
+                      "disabled": true
+                    },
+                    {
+                      "key": "page",
+                      "value": "1",
+                      "disabled": true
+                    },
+                    {
+                      "key": "limit",
+                      "value": "10",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 11:00:05 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "4021"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Success.\",\n    \"data\": [\n        {\n            \"id\": \"05207851-cdd5-4799-ace2-b905e482fe68\",\n            \"order_id\": \"ORDER-20260306173157-9890\",\n            \"status\": \"paid\",\n            \"total_price\": 1150000,\n            \"customer_name\": \"Budi Doremi\",\n            \"customer_email\": \"budi@email.com\",\n            \"midtrans_token\": \"4cd6f27c-ef02-4474-92b0-9eef5fba313c\",\n            \"midtrans_redirect_url\": \"https://app.sandbox.midtrans.com/snap/v4/redirection/4cd6f27c-ef02-4474-92b0-9eef5fba313c\",\n            \"items\": [\n                {\n                    \"id\": \"2598d1f3-57f1-4f4c-aea0-1b204aa1fe54\",\n                    \"product\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n                    \"product_name\": \"Keyboard\",\n                    \"quantity\": 2,\n                    \"price\": 350000,\n                    \"subtotal\": 700000,\n                    \"created_at\": \"2026-03-06T17:31:57.685212+07:00\",\n                    \"updated_at\": \"2026-03-06T17:31:57.685219+07:00\"\n                },\n                {\n                    \"id\": \"4bf3ad02-5d0f-4614-b3dd-7f34758cada6\",\n                    \"product\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\",\n                    \"product_name\": \"Mouse\",\n                    \"quantity\": 3,\n                    \"price\": 150000,\n                    \"subtotal\": 450000,\n                    \"created_at\": \"2026-03-06T17:31:57.685229+07:00\",\n                    \"updated_at\": \"2026-03-06T17:31:57.685231+07:00\"\n                }\n            ],\n            \"created_at\": \"2026-03-06T17:31:57.684525+07:00\",\n            \"updated_at\": \"2026-03-06T17:31:57.684534+07:00\"\n        },\n        {\n            \"id\": \"6876437f-2a1f-446a-89ab-17d1fca9b68b\",\n            \"order_id\": \"ORDER-20260306171637-918E\",\n            \"status\": \"failed\",\n            \"total_price\": 1450000,\n            \"customer_name\": \"Budi Doremi\",\n            \"customer_email\": \"budi@email.com\",\n            \"midtrans_token\": \"29859d04-885b-44b0-b9a0-09f659e5a6ee\",\n            \"midtrans_redirect_url\": \"https://app.sandbox.midtrans.com/snap/v4/redirection/29859d04-885b-44b0-b9a0-09f659e5a6ee\",\n            \"items\": [\n                {\n                    \"id\": \"98114828-c9fb-44ee-b9f5-2a61ffee7722\",\n                    \"product\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n                    \"product_name\": \"Keyboard\",\n                    \"quantity\": 2,\n                    \"price\": 350000,\n                    \"subtotal\": 700000,\n                    \"created_at\": \"2026-03-06T17:16:37.023803+07:00\",\n                    \"updated_at\": \"2026-03-06T17:16:37.023809+07:00\"\n                },\n                {\n                    \"id\": \"e14d3453-29cd-4e04-ba1a-1f5152d45ff7\",\n                    \"product\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\",\n                    \"product_name\": \"Mouse\",\n                    \"quantity\": 5,\n                    \"price\": 150000,\n                    \"subtotal\": 750000,\n                    \"created_at\": \"2026-03-06T17:16:37.023820+07:00\",\n                    \"updated_at\": \"2026-03-06T17:16:37.023822+07:00\"\n                }\n            ],\n            \"created_at\": \"2026-03-06T17:16:37.022095+07:00\",\n            \"updated_at\": \"2026-03-06T17:16:37.022106+07:00\"\n        },\n        {\n            \"id\": \"bc0dc763-2cd8-4f2c-ab5f-e6f28b72de1c\",\n            \"order_id\": \"ORDER-20260306153733-43BC\",\n            \"status\": \"failed\",\n            \"total_price\": 850000,\n            \"customer_name\": \"Budi Doremi\",\n            \"customer_email\": \"budi@email.com\",\n            \"midtrans_token\": \"ef573e70-4634-464e-bb59-79285d1ef16b\",\n            \"midtrans_redirect_url\": \"https://app.sandbox.midtrans.com/snap/v4/redirection/ef573e70-4634-464e-bb59-79285d1ef16b\",\n            \"items\": [\n                {\n                    \"id\": \"06fdf656-d605-4923-b384-5ad66686de38\",\n                    \"product\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n                    \"product_name\": \"Keyboard\",\n                    \"quantity\": 2,\n                    \"price\": 350000,\n                    \"subtotal\": 700000,\n                    \"created_at\": \"2026-03-06T15:37:33.711541+07:00\",\n                    \"updated_at\": \"2026-03-06T15:37:33.711549+07:00\"\n                },\n                {\n                    \"id\": \"b267418a-5b39-4271-943d-dc2b7a8cee57\",\n                    \"product\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\",\n                    \"product_name\": \"Mouse\",\n                    \"quantity\": 1,\n                    \"price\": 150000,\n                    \"subtotal\": 150000,\n                    \"created_at\": \"2026-03-06T15:37:33.711560+07:00\",\n                    \"updated_at\": \"2026-03-06T15:37:33.711563+07:00\"\n                }\n            ],\n            \"created_at\": \"2026-03-06T15:37:33.710553+07:00\",\n            \"updated_at\": \"2026-03-06T15:37:33.710566+07:00\"\n        },\n        {\n            \"id\": \"6eba5586-dfdb-424f-b5cd-09be232c69f5\",\n            \"order_id\": \"ORDER-20260306144741-E4B2\",\n            \"status\": \"cancelled\",\n            \"total_price\": 800000,\n            \"customer_name\": \"Budi Doremi\",\n            \"customer_email\": \"budi@email.com\",\n            \"midtrans_token\": null,\n            \"midtrans_redirect_url\": null,\n            \"items\": [\n                {\n                    \"id\": \"7449ce2b-6359-4e56-b727-0a8cf6c3728b\",\n                    \"product\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n                    \"product_name\": \"Keyboard\",\n                    \"quantity\": 1,\n                    \"price\": 350000,\n                    \"subtotal\": 350000,\n                    \"created_at\": \"2026-03-06T15:18:54.546895+07:00\",\n                    \"updated_at\": \"2026-03-06T15:18:54.546907+07:00\"\n                },\n                {\n                    \"id\": \"5baf0e3d-603f-41aa-b307-a71fdd9dd78d\",\n                    \"product\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\",\n                    \"product_name\": \"Mouse\",\n                    \"quantity\": 3,\n                    \"price\": 150000,\n                    \"subtotal\": 450000,\n                    \"created_at\": \"2026-03-06T15:18:54.546920+07:00\",\n                    \"updated_at\": \"2026-03-06T15:18:54.546925+07:00\"\n                }\n            ],\n            \"created_at\": \"2026-03-06T14:47:41.018080+07:00\",\n            \"updated_at\": \"2026-03-06T14:47:41.018091+07:00\"\n        }\n    ],\n    \"meta\": {\n        \"total\": 4,\n        \"page\": 1,\n        \"limit\": 10,\n        \"totalPages\": 1,\n        \"hasNext\": false,\n        \"hasPrev\": false\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Order Detail",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/orders/:id/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "orders",
+                ":id",
+                ""
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "6eba5586-dfdb-424f-b5cd-09be232c69f5"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Order Detail",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/v1/orders/:id/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "orders",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "6eba5586-dfdb-424f-b5cd-09be232c69f5"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 08:07:06 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "934"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Success.\",\n    \"data\": {\n        \"id\": \"6eba5586-dfdb-424f-b5cd-09be232c69f5\",\n        \"order_id\": \"ORDER-20260306144741-E4B2\",\n        \"status\": \"pending\",\n        \"total_price\": \"850000\",\n        \"customer_name\": \"Budi Doremi\",\n        \"customer_email\": \"budi@email.com\",\n        \"midtrans_token\": null,\n        \"midtrans_redirect_url\": null,\n        \"items\": [\n            {\n                \"id\": \"8ef20e72-86a2-4167-844d-ae6fcaab4bef\",\n                \"product\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n                \"product_name\": \"Keyboard\",\n                \"quantity\": 2,\n                \"price\": \"350000\",\n                \"subtotal\": \"700000\",\n                \"created_at\": \"2026-03-06T14:47:41.022380+07:00\",\n                \"updated_at\": \"2026-03-06T14:47:41.022391+07:00\"\n            },\n            {\n                \"id\": \"1d9e35de-1429-4213-98a4-f26be70d18ae\",\n                \"product\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\",\n                \"product_name\": \"Mouse\",\n                \"quantity\": 1,\n                \"price\": \"150000\",\n                \"subtotal\": \"150000\",\n                \"created_at\": \"2026-03-06T14:47:41.022401+07:00\",\n                \"updated_at\": \"2026-03-06T14:47:41.022404+07:00\"\n            }\n        ],\n        \"created_at\": \"2026-03-06T14:47:41.018080+07:00\",\n        \"updated_at\": \"2026-03-06T14:47:41.018091+07:00\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Order Detail by Order Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/orders/order-id/:order_id/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "orders",
+                "order-id",
+                ":order_id",
+                ""
+              ],
+              "variable": [
+                {
+                  "key": "order_id",
+                  "value": "ORDER-20260306144741-E4B2"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Order Detail by Order Id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/v1/orders/order-id/:order_id/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "orders",
+                    "order-id",
+                    ":order_id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "key": "order_id",
+                      "value": "ORDER-20260306144741-E4B2"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 08:07:17 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "934"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Success.\",\n    \"data\": {\n        \"id\": \"6eba5586-dfdb-424f-b5cd-09be232c69f5\",\n        \"order_id\": \"ORDER-20260306144741-E4B2\",\n        \"status\": \"pending\",\n        \"total_price\": \"850000\",\n        \"customer_name\": \"Budi Doremi\",\n        \"customer_email\": \"budi@email.com\",\n        \"midtrans_token\": null,\n        \"midtrans_redirect_url\": null,\n        \"items\": [\n            {\n                \"id\": \"8ef20e72-86a2-4167-844d-ae6fcaab4bef\",\n                \"product\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n                \"product_name\": \"Keyboard\",\n                \"quantity\": 2,\n                \"price\": \"350000\",\n                \"subtotal\": \"700000\",\n                \"created_at\": \"2026-03-06T14:47:41.022380+07:00\",\n                \"updated_at\": \"2026-03-06T14:47:41.022391+07:00\"\n            },\n            {\n                \"id\": \"1d9e35de-1429-4213-98a4-f26be70d18ae\",\n                \"product\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\",\n                \"product_name\": \"Mouse\",\n                \"quantity\": 1,\n                \"price\": \"150000\",\n                \"subtotal\": \"150000\",\n                \"created_at\": \"2026-03-06T14:47:41.022401+07:00\",\n                \"updated_at\": \"2026-03-06T14:47:41.022404+07:00\"\n            }\n        ],\n        \"created_at\": \"2026-03-06T14:47:41.018080+07:00\",\n        \"updated_at\": \"2026-03-06T14:47:41.018091+07:00\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create Order",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"items\": [\n    { \"product_id\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\", \"quantity\": 2 },\n    { \"product_id\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\", \"quantity\": 3 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/orders/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "orders",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create Order",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"items\": [\n    { \"product_id\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\", \"quantity\": 2 },\n    { \"product_id\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\", \"quantity\": 3 }\n  ]\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/v1/orders/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "orders",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 10:31:57 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "941"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Order created.\",\n    \"data\": {\n        \"id\": \"05207851-cdd5-4799-ace2-b905e482fe68\",\n        \"order_id\": \"ORDER-20260306173157-9890\",\n        \"status\": \"pending\",\n        \"total_price\": \"1150000\",\n        \"customer_name\": \"Budi Doremi\",\n        \"customer_email\": \"budi@email.com\",\n        \"midtrans_token\": null,\n        \"midtrans_redirect_url\": null,\n        \"items\": [\n            {\n                \"id\": \"2598d1f3-57f1-4f4c-aea0-1b204aa1fe54\",\n                \"product\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n                \"product_name\": \"Keyboard\",\n                \"quantity\": 2,\n                \"price\": \"350000\",\n                \"subtotal\": \"700000\",\n                \"created_at\": \"2026-03-06T17:31:57.685212+07:00\",\n                \"updated_at\": \"2026-03-06T17:31:57.685219+07:00\"\n            },\n            {\n                \"id\": \"4bf3ad02-5d0f-4614-b3dd-7f34758cada6\",\n                \"product\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\",\n                \"product_name\": \"Mouse\",\n                \"quantity\": 3,\n                \"price\": \"150000\",\n                \"subtotal\": \"450000\",\n                \"created_at\": \"2026-03-06T17:31:57.685229+07:00\",\n                \"updated_at\": \"2026-03-06T17:31:57.685231+07:00\"\n            }\n        ],\n        \"created_at\": \"2026-03-06T17:31:57.684525+07:00\",\n        \"updated_at\": \"2026-03-06T17:31:57.684534+07:00\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Order",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"items\": [\n    { \"product_id\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\", \"quantity\": 1 },\n    { \"product_id\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\", \"quantity\": 3 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/orders/:id/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "orders",
+                ":id",
+                ""
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "6eba5586-dfdb-424f-b5cd-09be232c69f5"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Update Order",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"items\": [\n    { \"product_id\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\", \"quantity\": 1 },\n    { \"product_id\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\", \"quantity\": 3 }\n  ]\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/v1/orders/:id/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "orders",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "f1fd3125-8ceb-49b0-ac56-2b1336d26fed"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 11:00:44 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "945"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Order updated.\",\n    \"data\": {\n        \"id\": \"f1fd3125-8ceb-49b0-ac56-2b1336d26fed\",\n        \"order_id\": \"ORDER-20260306180036-7B4D\",\n        \"status\": \"pending\",\n        \"total_price\": 800000,\n        \"customer_name\": \"admin@email.com\",\n        \"customer_email\": \"admin@email.com\",\n        \"midtrans_token\": null,\n        \"midtrans_redirect_url\": null,\n        \"items\": [\n            {\n                \"id\": \"ef236f1e-2a54-45dd-ba6c-539edc588e3f\",\n                \"product\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n                \"product_name\": \"Keyboard\",\n                \"quantity\": 1,\n                \"price\": 350000,\n                \"subtotal\": 350000,\n                \"created_at\": \"2026-03-06T18:00:44.232556+07:00\",\n                \"updated_at\": \"2026-03-06T18:00:44.232566+07:00\"\n            },\n            {\n                \"id\": \"3cee29e5-9f98-4b15-a1cf-4b283a27723b\",\n                \"product\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\",\n                \"product_name\": \"Mouse\",\n                \"quantity\": 3,\n                \"price\": 150000,\n                \"subtotal\": 450000,\n                \"created_at\": \"2026-03-06T18:00:44.232575+07:00\",\n                \"updated_at\": \"2026-03-06T18:00:44.232578+07:00\"\n            }\n        ],\n        \"created_at\": \"2026-03-06T18:00:36.557570+07:00\",\n        \"updated_at\": \"2026-03-06T18:00:36.557587+07:00\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Cancel Order",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/orders/:id/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "orders",
+                ":id",
+                ""
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "6eba5586-dfdb-424f-b5cd-09be232c69f5"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Cancel Order",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/v1/orders/:id/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "orders",
+                    ":id",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "f1fd3125-8ceb-49b0-ac56-2b1336d26fed"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 08:19:16 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "944"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Order cancelled.\",\n    \"data\": {\n        \"id\": \"6eba5586-dfdb-424f-b5cd-09be232c69f5\",\n        \"order_id\": \"ORDER-20260306144741-E4B2\",\n        \"status\": \"cancelled\",\n        \"total_price\": \"800000\",\n        \"customer_name\": \"Budi Doremi\",\n        \"customer_email\": \"budi@email.com\",\n        \"midtrans_token\": null,\n        \"midtrans_redirect_url\": null,\n        \"items\": [\n            {\n                \"id\": \"7449ce2b-6359-4e56-b727-0a8cf6c3728b\",\n                \"product\": \"8ee5dd17-ca99-4492-ae69-853a59fb19e6\",\n                \"product_name\": \"Keyboard\",\n                \"quantity\": 1,\n                \"price\": \"350000\",\n                \"subtotal\": \"350000\",\n                \"created_at\": \"2026-03-06T15:18:54.546895+07:00\",\n                \"updated_at\": \"2026-03-06T15:18:54.546907+07:00\"\n            },\n            {\n                \"id\": \"5baf0e3d-603f-41aa-b307-a71fdd9dd78d\",\n                \"product\": \"03c1a114-b7e3-4f58-b1db-9a3c3f12eb1f\",\n                \"product_name\": \"Mouse\",\n                \"quantity\": 3,\n                \"price\": \"150000\",\n                \"subtotal\": \"450000\",\n                \"created_at\": \"2026-03-06T15:18:54.546920+07:00\",\n                \"updated_at\": \"2026-03-06T15:18:54.546925+07:00\"\n            }\n        ],\n        \"created_at\": \"2026-03-06T14:47:41.018080+07:00\",\n        \"updated_at\": \"2026-03-06T14:47:41.018091+07:00\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Request Payment Token / Pay Order",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/orders/:id/pay/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "orders",
+                ":id",
+                "pay",
+                ""
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "bc0dc763-2cd8-4f2c-ab5f-e6f28b72de1c"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Request Payment Token / Pay Order",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/v1/orders/:id/pay/",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "orders",
+                    ":id",
+                    "pay",
+                    ""
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "05207851-cdd5-4799-ace2-b905e482fe68"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 Mar 2026 10:32:05 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.4"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "229"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Success.\",\n    \"data\": {\n        \"midtrans_token\": \"4cd6f27c-ef02-4474-92b0-9eef5fba313c\",\n        \"midtrans_redirect_url\": \"https://app.sandbox.midtrans.com/snap/v4/redirection/4cd6f27c-ef02-4474-92b0-9eef5fba313c\"\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Payments",
+      "item": [
+        {
+          "name": "Webhook",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"order_id\": \"ORDER-20260306173157-9890\",\n  \"status_code\": \"200\",\n  \"gross_amount\": \"150000\",\n  \"transaction_status\": \"settlement\",\n  \"signature_key\": \"\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/payments/webhook/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "payments",
+                "webhook",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "access_token",
+      "value": ""
+    }
+  ]
+}
